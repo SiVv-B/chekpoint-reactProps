@@ -1,5 +1,8 @@
 /** @format */
 
+import React from "react";
+import propTypes from "prop-types";
+
 function FullName(props) {
   return (
     <>
@@ -8,3 +11,7 @@ function FullName(props) {
   );
 }
 export default FullName;
+
+FullName.propTypes = {
+  myFullName: propTypes.string,
+};
